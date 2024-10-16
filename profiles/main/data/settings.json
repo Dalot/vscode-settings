@@ -1,0 +1,166 @@
+{
+  "telemetry.telemetryLevel": "off",
+  "tabnine.experimentalAutoImports": true,
+  "[yaml]": {
+    "editor.detectIndentation": true,
+    "editor.insertSpaces": true,
+    "editor.tabSize": 2,
+    "editor.autoIndent": "none",
+  },
+  "vim.useCtrlKeys": true,
+  "vim.handleKeys": {
+    "<C-a>": false,
+    "<C-f>": false,
+    "<C-z>": false,
+    "<C-b>": false,
+    "<C-y>": false,
+    "Shift-Tab": false,
+    "C-Alt": false,
+    "<Tab>": false,
+    "ctrl+o": false,
+    "ctrl+shift+o": false
+  },
+  "vim.leader": ",",
+  "vim.insertModeKeyBindings": [
+    {
+      "before": [
+        "<C-c>"
+      ],
+      "after": [
+        "<Esc>"
+      ],
+    },
+    {
+      "before": [
+        "<Tab>"
+      ],
+      "after": [
+        "<Tab>"
+      ]
+    }
+  ],
+  "vim.visualModeKeyBindingsNonRecursive": [
+    {
+      "before": [
+        ">",
+      ],
+      "after": [
+        ">",
+        "g",
+        "v",
+      ],
+    },
+    {
+      "before": [
+        "<"
+      ],
+      "after": [
+        "<",
+        "g",
+        "v",
+      ]
+    }
+  ],
+  "rust-analyzer.checkOnSave.command": "clippy",
+  "files.autoSaveDelay": 1,
+  "editor.acceptSuggestionOnCommitCharacter": false,
+  "debug.allowBreakpointsEverywhere": true,
+  "todo-tree.general.tags": [
+    "BUG",
+    "HACK",
+    "FIXME",
+    "TODO",
+    "XXX",
+    "[ ]",
+    "[x]"
+  ],
+  "todo-tree.regex.regex": "(//|#|<!--|;|/\\|^|^\\s(-|\\d+.))\\s*($TAGS)",
+  "go.toolsManagement.autoUpdate": true,
+  "gopls": {
+    "buildFlags": [
+      "-tags=integration"
+    ]
+  },
+  "files.associations": {
+    "*.fixture": "json",
+    "*.golden": "json",
+  },
+  "go.delveConfig": {
+    "debugAdapter": "legacy",
+    "dlvLoadConfig": {
+      "maxStringLen": 400,
+    }
+  },
+  "redhat.telemetry.enabled": false,
+  "vsicons.dontShowNewVersionMessage": true,
+  "git.autofetch": true,
+  "terminal.integrated.defaultLocation": "view",
+  "terminal.integrated.defaultProfile.linux": "bash",
+  "terminal.integrated.fontSize": 14,
+  "terminal.integrated.profiles.linux": {
+    "bash": {
+      "path": "bash",
+      "icon": "terminal-bash"
+    },
+    "zsh": {
+      "path": "zsh"
+    },
+    "fish": {
+      "path": "fish"
+    },
+    "tmux": {
+      "path": "tmux",
+      "icon": "terminal-tmux"
+    },
+    "pwsh": {
+      "path": "pwsh",
+      "icon": "terminal-powershell"
+    },
+    "sh": {
+      "path": "/bin/sh"
+    }
+  },
+  "security.workspace.trust.untrustedFiles": "open",
+  "settingsSync.ignoredExtensions": [
+    "vadimcn.vscode-lldb",
+    "jakebecker.elixir-ls",
+    "humy2833.ftp-simple",
+    "kevinrose.vsc-python-indent"
+  ],
+  "git.confirmSync": false,
+  "editor.inlineSuggest.enabled": true,
+  "editor.suggestSelection": "first",
+  "github.copilot.enable": {
+    "*": true,
+    "yaml": true,
+    "plaintext": false,
+    "markdown": false
+  },
+  "[typescript]": {
+    "editor.defaultFormatter": "vscode.typescript-language-features"
+  },
+  "editor.defaultFormatter": "vscode.typescript-language-features",
+  "[elixir]": {
+    "editor.defaultFormatter": "saratravi.elixir-formatter"
+  },
+  "files.saveConflictResolution": "overwriteFileOnDisk",
+  "explorer.compactFolders": false,
+  "workbench.colorTheme": "GitHub Dark Default",
+  "remote.SSH.remotePlatform": {
+    "raspberrypi4": "linux"
+  },
+  "vim.useSystemClipboard": true,
+  "vim.enableNeovim": true,
+  "[jsonc]": {
+    "editor.defaultFormatter": "vscode.json-language-features"
+  },
+  "[go]": {
+    "editor.defaultFormatter": "golang.go"
+  },
+  "editor.lineNumbers": "relative",
+  "workbench.activityBar.location": "hidden",
+  "terminal.integrated.defaultProfile.windows": "Git Bash",
+  "[python]": {
+    "editor.defaultFormatter": "ms-python.black-formatter"
+  },
+}

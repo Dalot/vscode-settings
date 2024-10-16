@@ -1,0 +1,199 @@
+// Place your key bindings in this file to override the defaults
+[
+    {
+        "key": "ctrl+c",
+        "command": "vim.remap",
+        "when": "editorTextFocus && vim.mode == 'Insert'",
+        "args": {
+            "after": [
+                "<Esc>"
+            ]
+        }
+    },
+    {
+        "key": "ctrl+s",
+        "command": "workbench.action.files.save",
+        "when": "editorTextFocus"
+    },
+    {
+        "key": "tab",
+        "command": "workbench.action.nextEditor",
+        "when": "editorTextFocus"
+    },
+    {
+        "key": "shift+tab",
+        "command": "workbench.action.previousEditor",
+        "when": "editorTextFocus"
+    },
+    {
+        "key": ", f m",
+        "command": "editor.action.formatDocument",
+        "when": "vim.mode == 'Normal' && editorHasDocumentFormattingProvider && editorTextFocus && !editorReadonly"
+    },
+    {
+        "key": "ctrl+a k",
+        "command": "workbench.action.navigateUp"
+    },
+    {
+        "key": "ctrl+a j",
+        "command": "workbench.action.navigateDown"
+    },
+    {
+        "key": "ctrl+a h",
+        "command": "workbench.action.navigateLeft"
+    },
+    {
+        "key": "ctrl+a l",
+        "command": "workbench.action.navigateRight"
+    },
+    {
+        "key": ", x",
+        "command": "workbench.action.closeActiveEditor",
+        "when": "vim.mode == 'Normal' && editorTextFocus && !editorReadonly"
+    },
+    {
+        "key": "tab",
+        "command": "selectNextSuggestion",
+        "when": "suggestWidgetVisible && textInputFocus"
+    },
+    {
+        "key": "shift+tab",
+        "command": "selectPrevSuggestion",
+        "when": "suggestWidgetVisible && textInputFocus"
+    },
+    {
+        "key": "ctrl+]",
+        "command": "editor.action.inlineSuggest.commit",
+        "when": "editorTextFocus && inlineSuggestionVisible"
+    },
+    {
+        "key": "ctrl+a z",
+        "command": "workbench.action.terminal.toggleTerminal",
+        "when": "editorTextFocus || terminalFocus"
+    },
+    {
+        "key": "ctrl+a -",
+        "command": "workbench.action.terminal.new",
+        "when": "editorTextFocus || terminalFocus"
+    },
+    {
+        "key": "ctrl+a \\",
+        "command": "workbench.action.createTerminalEditorSide",
+        "when": "editorTextFocus || terminalFocus"
+    },
+    {
+        "key": "a",
+        "command": "explorer.newFile",
+        "when": "explorerViewletFocus && !inputFocus"
+    },
+    {
+        "key": "r",
+        "command": "renameFile",
+        "when": "explorerViewletFocus && !inputFocus"
+    },
+    {
+        "key": "c",
+        "command": "filesExplorer.copy",
+        "when": "explorerViewletFocus && !inputFocus"
+    },
+    {
+        "key": "p",
+        "command": "filesExplorer.paste",
+        "when": "explorerViewletFocus && !inputFocus"
+    },
+    {
+        "key": "enter",
+        "command": "explorer.openAndPassFocus",
+        "when": "explorerViewletFocus && !inputFocus"
+    },
+    {
+        "key": "d",
+        "command": "deleteFile",
+        "when": "explorerViewletFocus && !inputFocus"
+    },
+    {
+        "key": ", c a",
+        "command": "editor.action.quickFix",
+        "when": "editorHasCodeActionsProvider && textInputFocus && vim.mode == 'Normal'"
+    },
+    {
+        "key": "Shift+k",
+        "command": "editor.action.showHover",
+        "when": "editorHasHoverProvider && textInputFocus && vim.mode == 'Normal'"
+    },
+    {
+        "key": ", e",
+        "command": "editor.action.marker.next",
+        "when": "editorTextFocus && vim.mode == 'Normal'"
+    },
+    {
+        "key": ", E",
+        "command": "editor.action.marker.prev",
+        "when": "editorTextFocus && vim.mode == 'Normal'"
+    },
+    {
+        "key": "ctrl+b",
+        "command": "workbench.view.explorer",
+        "when": "!sideBarVisible"
+    },
+    {
+        "key": "ctrl+b",
+        "command": "workbench.action.closeSidebar",
+        "when": "sideBarVisible && !inputFocus"
+    },
+    {
+        "key": "ctrl+b",
+        "command": "workbench.view.explorer",
+        "when": "sideBarVisible && inputFocus"
+    },
+    {
+        "key": "g r",
+        "command": "editor.action.referenceSearch.trigger",
+        "when": "editorTextFocus && vim.mode == 'Normal'"
+    },
+    {
+        "key": "g d",
+        "command": "editor.action.revealDefinition",
+        "when": "editorHasDefinitionProvider && editorTextFocus && !isInEmbeddedEditor && vim.mode == 'Normal'"
+    },
+    {
+        "key": ", r a",
+        "command": "editor.action.rename",
+        "when": "editorHasRenameProvider && editorTextFocus && !editorReadonly && vim.mode == 'Normal'"
+    },
+    {
+        "key": "ctrl+o",
+        "command": "workbench.action.navigateBack",
+        "when": "canNavigateBack"
+    },
+    {
+        "key": "ctrl+shift+o",
+        "command": "workbench.action.navigateForward",
+        "when": "canNavigateForward"
+    },
+    {
+        "key": "g g",
+        "command": "cursorTop",
+        "when": "editorTextFocus && vim.mode !== 'Insert'"
+    },
+    {
+        "key": "shift+w",
+        "command": "workbench.files.action.collapseExplorerFolders",
+        "when": "explorerViewletVisible && filesExplorerFocus"
+    },
+    {
+        "key": "g c",
+        "command": "editor.action.commentLine",
+        "when": "editorTextFocus && !editorReadonly && vim.mode !== 'Insert'"
+    },
+    {
+        "key": "g i",
+        "command": "editor.action.goToImplementation",
+        "when": "editorTextFocus && vim.mode !== 'Insert'"
+    },
+    {
+        "key": ", f w",
+        "command": "workbench.action.findInFiles",
+        "when": "editorTextFocus"
+    }
+]
