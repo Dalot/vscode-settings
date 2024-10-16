@@ -193,7 +193,23 @@
     },
     {
         "key": ", f w",
-        "command": "workbench.action.findInFiles && vim.mode !== 'Normal'",
-        "when": "editorTextFocus"
+        "command": "workbench.action.findInFiles",
+        "when": "editorTextFocus && vim.mode == 'Normal'"
+    },
+    {
+        "key": ", f o",
+        "command": "workbench.action.quickOpen",
+        "when": "editorTextFocus && vim.mode == 'Normal'"
+    },
+    {
+        "key": "tab",
+        "command": "workbench.action.quickOpenNavigateNext",
+        "when": "inQuickOpen"
+    },
+    // this one below is not working as expected
+    {
+        "key": "shift tab",
+        "command": "workbench.action.quickOpenNavigatePrevious",
+        "when": "inQuickOpen"
     }
 ]
