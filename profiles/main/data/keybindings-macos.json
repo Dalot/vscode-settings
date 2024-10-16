@@ -193,7 +193,7 @@
     },
     {
         "key": ", f w",
-        "command": "workbench.action.findInFiles",
+        "command": "workbench.action.findInFiles && vim.mode !== 'Normal'",
         "when": "editorTextFocus"
     }
 ]
