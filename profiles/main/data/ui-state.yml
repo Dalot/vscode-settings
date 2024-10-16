@@ -107,7 +107,7 @@ workbench.activityBar.location: default
 workbench.auxiliarybar.pinnedPanels: "[]"
 workbench.auxiliarybar.placeholderPanels: "[]"
 workbench.auxiliaryBar.size: "256"
-workbench.editor.languageDetectionOpenedLanguages.global: '[["markdown",true],["ssh_config",true],["go.sum",true],["jsonc",true],["go.mod",true],["yaml",true],["dockerfile",true],["go",true],["makefile",true],["plaintext",true]]'
+workbench.editor.languageDetectionOpenedLanguages.global: '[["markdown",true],["ssh_config",true],["go.sum",true],["jsonc",true],["go.mod",true],["yaml",true],["dockerfile",true],["makefile",true],["plaintext",true],["go",true]]'
 workbench.explorer.views.state.hidden: '[{"id":"workbench.explorer.fileView","isHidden":false},{"id":"outline","isHidden":true},{"id":"workbench.explorer.openEditorsView","isHidden":true},{"id":"workbench.explorer.emptyView","isHidden":false},{"id":"npm","isHidden":true},{"id":"timeline","isHidden":true},{"id":"gitlens.views.repositories:explorer","isHidden":false},{"id":"gitlens.views.fileHistory:explorer","isHidden":false},{"id":"gitlens.views.lineHistory:explorer","isHidden":false},{"id":"gitlens.views.compare:explorer","isHidden":false},{"id":"gitlens.views.search:explorer","isHidden":false},{"id":"liveshare.session.explorer","isHidden":false},{"id":"go.explorer","isHidden":false},{"id":"javaProjectExplorer","isHidden":false},{"id":"mavenProjects","isHidden":false},{"id":"rustDependencies","isHidden":false}]'
 workbench.grid.size: '{"height":768,"width":1024}'
 workbench.panel.alignment: center
