@@ -62,8 +62,6 @@ enabled:
     uuid: f0c5397b-d357-4197-99f0-cb4202f22818
   - id: ms-vscode.cpptools
     uuid: 690b692e-e8a9-493f-b802-8089d50ac1b2
-  - id: ms-vscode.makefile-tools
-    uuid: e09cf600-90a1-414e-92a0-031f1a5391c6
   - id: ms-vsliveshare.vsliveshare
     uuid: 5a6dc0d5-dc02-4121-8e24-cad33a2ff0af
   - id: naumovs.color-highlight
