@@ -211,5 +211,18 @@
         "key": "shift tab",
         "command": "workbench.action.quickOpenNavigatePrevious",
         "when": "inQuickOpen"
+    },
+    {
+        "key": "/ /",
+        "command": "editor.action.clipboardCopyAction",
+        "when": "editorTextFocus && vim.mode == 'Visual'"
+    },
+    {
+        "key": "/ /",
+        "command": "workbench.action.findInFiles",
+        "when": "editorTextFocus && vim.mode == 'Visual'",
+        "args": {
+            "query": "${selectedText}"
+        }
     }
 ]
