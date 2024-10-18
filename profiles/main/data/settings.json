@@ -14,6 +14,7 @@
     "<C-z>": false,
     "<C-b>": false,
     "<C-y>": false,
+    "<C-p>": false,
     "Shift-Tab": false,
     "C-Alt": false,
     "<Tab>": false,
@@ -58,6 +59,18 @@
         "<",
         "g",
         "v",
+      ]
+    }
+  ],
+  "vim.normalModeKeyBindingsNonRecursive": [
+    {
+      "before": [
+        "<leader>",
+        "r",
+        "0"
+      ],
+      "commands": [
+        ":normal! diw\"0P"
       ]
     }
   ],
@@ -163,4 +176,10 @@
   "[python]": {
     "editor.defaultFormatter": "ms-python.black-formatter"
   },
+  "workbench.colorCustomizations": {
+    "terminal.background": "#00000000"
+  },
+  "workbench.settings.applyToAllProfiles": [
+    "workbench.colorCustomizations"
+  ],
 }
